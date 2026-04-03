@@ -1,0 +1,72 @@
+/* styles/tokens.css — Source: Figma Simple Design System (A4JtPsWMATxSVnAlKoUZMz) */
+/* NE PAS MODIFIER directement — mettre à jour depuis Figma puis régénérer */
+
+:root {
+  /* ─── Couleurs Background ─── */
+  --sds-color-background-default-default: #ffffff;
+  --sds-color-background-brand-default: #2c2c2c;
+
+  /* ─── Couleurs Text ─── */
+  --sds-color-text-default-default: #1e1e1e;
+  --sds-color-text-default-secondary: #757575;
+  --sds-color-text-brand-on-brand: #f5f5f5;
+
+  /* ─── Couleurs Border ─── */
+  --sds-color-border-default-default: #d9d9d9;
+  --sds-color-border-brand-default: #2c2c2c;
+  --sds-color-border-neutral-secondary: #767676;
+
+  /* ─── Couleurs Shadow ─── */
+  --sds-color-black-100: rgba(12, 12, 13, 0.05);
+  --sds-color-black-200: rgba(12, 12, 13, 0.10);
+
+  /* ─── Typographie — Title Hero ─── */
+  --sds-typography-title-hero-font-family: 'Inter', sans-serif;
+  --sds-typography-title-hero-font-weight: 700;
+  --sds-typography-title-hero-size: 72px;
+
+  /* ─── Typographie — Title Page ─── */
+  --sds-typography-title-page-font-family: 'Inter', sans-serif;
+  --sds-typography-title-page-font-weight: 700;
+  --sds-typography-title-page-size-base: 48px;
+
+  /* ─── Typographie — Heading ─── */
+  --sds-typography-heading-font-family: 'Inter', sans-serif;
+  --sds-typography-heading-font-weight: 600;
+  --sds-typography-heading-size-base: 24px;
+
+  /* ─── Typographie — Subheading ─── */
+  --sds-typography-subheading-font-family: 'Inter', sans-serif;
+  --sds-typography-subheading-font-weight: 400;
+  --sds-typography-subheading-size-medium: 20px;
+
+  /* ─── Typographie — Body ─── */
+  --sds-typography-body-font-family: 'Inter', sans-serif;
+  --sds-typography-body-font-weight-regular: 400;
+  --sds-typography-body-font-weight-bold: 700;
+  --sds-typography-body-size-medium: 16px;
+  --sds-typography-body-size-small: 14px;
+
+  /* ─── Espacements ─── */
+  --sds-size-space-100: 4px;
+  --sds-size-space-200: 8px;
+  --sds-size-space-300: 12px;
+  --sds-size-space-400: 16px;
+  --sds-size-space-600: 24px;
+  --sds-size-space-800: 32px;
+  --sds-size-space-1200: 48px;
+
+  /* ─── Rayons ─── */
+  --sds-size-radius-100: 4px;
+  --sds-size-radius-200: 8px;
+  --sds-size-radius-400: 16px;
+  --sds-size-radius-full: 9999px;
+
+  /* ─── Bordures ─── */
+  --sds-size-stroke-border: 1px;
+
+  /* ─── Ombres ─── */
+  --sds-size-depth-0: 0px;
+  --sds-size-depth-025: 1px;
+  --sds-size-depth-100: 4px;
+}
