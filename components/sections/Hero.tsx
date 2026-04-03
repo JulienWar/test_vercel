@@ -1,5 +1,10 @@
+'use client'
+
+import { useRef } from 'react'
+import { useGSAP } from '@gsap/react'
 import Image from 'next/image'
 import Button from '@/components/ui/Button'
+import { initHeroTimeline } from '@/lib/gsap/heroTimeline'
 
 type HeroProps = {
   title: string
@@ -19,9 +24,17 @@ export default function Hero({
   variant = 'default',
 }: HeroProps) {
   const isDark = variant === 'dark'
+  const containerRef = useRef<HTMLElement>(null)
+
+  useGSAP(() => {
+    if (containerRef.current) {
+      initHeroTimeline(containerRef.current)
+    }
+  }, { scope: containerRef })
 
   return (
     <section
+      ref={containerRef}
       className={
         'relative min-h-screen flex items-center pt-16 overflow-hidden ' +
         (isDark ? 'bg-brand text-on-brand' : 'bg-surface text-text-primary')
