@@ -3,7 +3,7 @@
 // Chaque fonction retourne une config ScrollTrigger prête à l'emploi
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
-import { staggerReveal, fadeUp, parallax } from './animations'
+import { staggerReveal, parallax } from './animations'
 
 gsap.registerPlugin(ScrollTrigger)
 

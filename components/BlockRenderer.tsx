@@ -1,5 +1,6 @@
 // components/BlockRenderer.tsx
 // Ce composant mappe chaque type de bloc Sanity vers son composant React
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import Hero from '@/components/sections/Hero'
 import CardGrid from '@/components/sections/CardGrid'
 import TextBlock from '@/components/sections/TextBlock'
