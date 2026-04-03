@@ -4,6 +4,7 @@ import '../styles/tokens.css'
 import './globals.css'
 import Nav from '@/components/layout/Nav'
 import Footer from '@/components/layout/Footer'
+import Cursor from '@/components/ui/Cursor'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -20,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="fr">
       <body className={`${inter.className} bg-surface text-text-primary`}>
+        <Cursor />
         <Nav />
         <main>{children}</main>
         <Footer />
