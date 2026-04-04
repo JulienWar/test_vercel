@@ -1,5 +1,3 @@
-// components/ui/Cursor.tsx
-// Curseur personnalisé avec lag effect GSAP — masqué sur mobile (touch devices)
 'use client'
 
 import { useEffect, useRef } from 'react'
@@ -10,7 +8,6 @@ export default function Cursor() {
   const ringRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    // Ne pas afficher sur les appareils touch
     if (window.matchMedia('(pointer: coarse)').matches) return
 
     document.documentElement.style.cursor = 'none'
@@ -32,14 +29,18 @@ export default function Cursor() {
 
   return (
     <>
+      {/* Dot — effet négatif : blanc sur fond sombre, noir sur fond clair */}
       <div
         ref={dotRef}
-        className="fixed top-0 left-0 w-2 h-2 bg-brand rounded-full pointer-events-none z-[9999] -translate-x-1/2 -translate-y-1/2"
+        style={{ mixBlendMode: 'difference' }}
+        className="fixed top-0 left-0 w-4 h-4 bg-white rounded-full pointer-events-none z-[9999] -translate-x-1/2 -translate-y-1/2"
         aria-hidden="true"
       />
+      {/* Ring — effet négatif avec lag */}
       <div
         ref={ringRef}
-        className="fixed top-0 left-0 w-8 h-8 border border-brand rounded-full pointer-events-none z-[9998] -translate-x-1/2 -translate-y-1/2"
+        style={{ mixBlendMode: 'difference' }}
+        className="fixed top-0 left-0 w-10 h-10 border-2 border-white rounded-full pointer-events-none z-[9998] -translate-x-1/2 -translate-y-1/2"
         aria-hidden="true"
       />
     </>
